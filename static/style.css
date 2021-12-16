@@ -1,0 +1,278 @@
+{% load static %}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.7;
+}
+
+/* countings */
+.countings {
+    margin-bottom: 25px;
+}
+.countings .pt-5 p {
+    display: inline-block;
+    font-size: 63px;
+}
+.countings .pt-5 p + p{
+    padding-left:10px;
+    display: inline-block;
+    font-size: 18px;
+}
+@media (min-width:768px) AND (max-width:990px){
+    .countings .pt-5 p {
+        display: inline-block;
+        font-size: 40px;
+    }
+    .countings .pt-5 p + p {
+        padding-left: 6px;
+        display: inline-block;
+        font-size: 15px;
+    }
+}
+
+.home .card{
+    padding: 10px;
+}
+
+
+.aboutimg-c{
+    width:94%;
+}
+.aboutimg-c img{
+    width:100%;
+    overflow:hidden;
+}
+
+/* description slider */
+.card{
+    position:relative;
+}
+.card-body {
+	position: absolute;
+	left: 0;
+	bottom: -170px;
+	width: 100%;
+	background: #000;
+	opacity: 0;
+	transition: all 300ms;
+	color: white;
+	border-bottom-left-radius: .25rem;
+	border-bottom-right-radius: .25rem;
+	z-index: 0;
+}
+.card:hover .card-body {
+	bottom: 0;
+	opacity: 0.8;
+}
+
+
+body.index-background {
+  background-color: #131a20;
+  background-image: url(image/background.jpg);
+  background-repeat: repeat;
+  color: #84878d;
+}
+
+.comp-logo {
+  position: center;
+  text-align: center;
+}
+
+.site-section .sub-title {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ff5733;
+  margin-bottom: 10px;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.text-black {
+  color: #000;
+}
+
+.container-fluid .headinfo {
+  font-weight: 500;
+  color: #000;
+
+}
+p.mb-5.grey {
+  line-height: 1.7;
+  color: gray;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.indexlogo img
+{
+    height: 150px;
+    width: 150px;
+}
+
+.col-md-12.col-lg-12.form {
+    line-height: 1.7;
+    color: gray;
+    font-size: 1rem;
+}
+
+.site-block-appointment form, .bg-light form {
+  border-radius: 10px;
+  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.05);
+}
+
+.single-desc {
+    padding-left: 25px;
+}
+
+h1.headinfo {
+    font-size: 7vmin;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.site-section {
+  padding: 2.5em 0; }
+  @media (min-width: 768px) {
+
+
+  .site-section {
+     padding: 5em 0; } }
+
+
+  .site-section.site-section-sm {
+    padding: 4em 0; }
+
+
+
+
+.container {
+
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.row {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+
+}
+
+.col-lg-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.ftco-counter .text.text-border {
+
+  border-right: 1px solid
+
+  rgba(0, 0, 0, 0.07);
+}
+
+.comment select {
+    width: 100px;
+}
+.ftco-counter .text strong.number {
+
+  font-weight: 600;
+  font-size: 50px;
+  color:
+
+  #000000;
+
+}
+
+
+.pt-4, .py-4 {
+
+  padding-top: 2.5rem;
+
+}
+
+.text.text-border {
+
+  border-right: 1px solid
+
+  rgba(0, 0, 0, 0.07);
+
+}
+
+
+
+footer .f2 {
+  padding-bottom: 24px;
+}
+
+
+footer {
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 5vmin 15vmin;
+    overflow: hidden; }
+
+  }
+
+  footer p > span {
+    color: #ff512f;
+  }
+
+  footer input {
+    border: none !important;
+  }
+
+  footer input::placeholder {
+    color: white;
+  }
+
+  footer .input-group .input-group-text {
+    background: var(--bggradient);
+    border: none;
+  }
+
+  footer .column i {
+    color: #dd2476;
+  }
+
+
+
+  footer .social-links a {
+    margin-right:5px;
+    font-size: 24px;
+    color: #eeeeee;
+  }
+  .fa-instagram:hover{
+    color:#dd2476;
+  }
+  .fa-facebook-f:hover{
+    color:#4267b2;
+  }
+  .fa-youtube:hover{
+    color: #f00;
+  }
+  .fa-twitter:hover{
+    color:rgba(29,161,242,1.00);
+  }
+.form1 {
+    padding-top: 20px;
+}

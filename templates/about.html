@@ -1,0 +1,188 @@
+{% load static %}
+<html lang="en">
+<head>
+     <title>MovieManiac</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<!--        navbar      -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="index">
+      <img src="{% static 'image/logo.png' %}" width="60" height="60" alt="Company Logo">
+    </a>
+  </nav>
+  <a class="navbar-brand" href="index">Movie Maniac</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href='contactus'>Contact Us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More <span class="badge badge-secondary">New</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="trending">Trending</a>
+        </div>
+      </li>
+    </ul>
+    <nav class="navbar navbar-light bg-light">
+          <form class="form-inline">
+            <a href="userlogin"><button class="btn btn-outline-success" type="button">Login</button></a>
+            <a href="userregister"><button class="btn btn-sm btn-outline-secondary" type="button">Signup</button></a>
+          </form>
+        </nav>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
+  </div>
+</nav>
+
+<!--        Design     -->
+    <div>
+    <p class="badge badge-primary">Action</p>
+    <p class="badge badge-secondary">Adventure</p>
+    <p class="badge badge-success">Animation</p>
+    <p class="badge badge-danger">Comedy</p>
+    <p class="badge badge-warning">Documentary</p>
+    <p class="badge badge-info">Fantasy</p>
+    <p class="badge badge-light">Horror</p>
+    <p class="badge badge-dark">Thriller</p>
+    </div>
+
+  <section>
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-9 pb-5 text-center">
+                <p class="breadcrumbs"><span class="mr-2"><a href="home">Home</a><span>&nbsp;&nbsp;></span></span><span>About us</span></p>
+              <h1 class="mb-1 bread">About Us</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+                  <section class="aboutus ftco-section ftco-no-pb">
+                          <div class="container">
+                                  <div class="row">
+                                      <div class="col-12 col-lg-6">
+                                          <div class="aboutimg-c mb-5">
+                                              <img src="{% static 'image/team.jpg' %}">
+                                          </div>
+                                      </div>
+                                      <div class="col-12 col-lg-6">
+                                        <div class="heading-section">
+                                            <h2 class="mb-4">We Put People First.</h2>
+
+                                            <p>MoiveManiac was born out of our love for movies. Discussing it among friends and finding out which movies are in trending always turned into magical conversation. We wanted to share this same feeling with others, so we set out to build MovieManiac.</p>
+                                            <p>Since the main inspiration for this website has always been conversation, we encourage our users to engage in conversation with us. We take constructive criticism very seriously so please do not hesitate to provide any criticism or feedback.</p>
+                                        </div>
+                                      </div>
+                                  </div>
+                          </div>
+                  </section>
+
+    <div class="countings mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="pt-5">
+                        <div class="text text-border align-items-center">
+                          <p class="number"> 120</p>
+                          <p>Movie<br>Reviewed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="pt-5">
+                        <div class="text text-border align-items-center">
+                          <p class="number"> 57</p>
+                          <p>Total<br>Users</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="pt-5">
+                <div class="text text-border align-items-center">
+                  <p class="number"> 12</p>
+                  <p>Indie Movie<br>Promoted</p>
+                </div>
+              </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+              <div class="pt-5">
+                <div class="text text-border align-items-center">
+                  <p class="number"> 947</p>
+                  <p>Total<br>Comments</p>
+                </div>
+              </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--        Footer      -->
+
+  <footer>
+    <div class="container-fluid p-0">
+      <div class="row text-left">
+        <div class="col-md-5 col-sm-5">
+          <h4 class="text-light">About Us</h4>
+          <p class="text-muted">We provide movie listing and rating services. Users can also send us their thoughts and comments which we will reflect on our rating for the given movie.</p>
+          <p class="pt-4 text-muted">Copyright ©2020 All rights reserved.
+          </p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <h4 class="text-light">Newsletter</h4>
+          <p class="text-muted">For staying up-to-date please Subscribe</p>
+          <form class="form-inline">
+            <div class="col pl-0">
+              <div class="input-group pr-5 f2">
+                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <h4 class="text-light">Follow Us</h4>
+          <p class="text-muted">Our Social Page</p>
+          <div class="social-links text-light">
+            <a href="https://www.facebook.com/prabesh226"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
